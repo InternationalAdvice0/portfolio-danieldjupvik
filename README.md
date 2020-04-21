@@ -1,2 +1,2 @@
 # Portfolio - danieldjupvik
-djupvik.co
+http://djupvik.co
