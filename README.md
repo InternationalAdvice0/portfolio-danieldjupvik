@@ -1,2 +1,2 @@
-# portfolio-danieldjupvik
-Portfolio - Daniel Djupvik
+# Portfolio - danieldjupvik
+djupvik.co
