@@ -1,0 +1,91 @@
+/* Essensial */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+/* Essensial - END */
+
+/* Globale navbar */
+.logo-text {
+  font-size: 20pt;
+  margin-left: 1.5em;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  background-color: rgb(51, 51, 51);
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav-links {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Hamburger menu icon */
+.container {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: lightgray;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+/* Hamburger menu icon - END */
+/* Globale navbar - END */
+
+/* Index */
+.main-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../assets/shahadat-rahman-BfrQnKBulYQ-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  #filter: blur(5px);
+  #-webkit-filter: blur(5px);
+  height: 100%;
+}
+
+main {
+  height: 1000px;
+  width: 100%;
+}
+
+/* Index - END */
