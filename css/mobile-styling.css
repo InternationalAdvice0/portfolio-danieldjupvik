@@ -138,6 +138,7 @@ main {
   margin-right: auto;
   margin-left: auto;
   width: fit-content;
+  letter-spacing: 3px;
 }
 
 .sub-heading {
@@ -206,6 +207,7 @@ main {
   margin-left: auto;
   padding-bottom: 3em;
   width: 80%;
+  border-bottom: dashed 2px white;
 }
 
 .maps {
@@ -232,13 +234,13 @@ main {
 
 .contact_form {
   margin-top: 1em;
+  padding-bottom: 1em;
   border: none;
 }
 
 .contact_field {
   width: 98%;
   padding: 0em;
-  padding-bottom: 1em;
   padding-top: 0;
   margin-left: auto;
   margin-right: auto;
@@ -251,19 +253,29 @@ main {
   color: white;
 }
 
+.form-error {
+  color: red;
+  display: none;
+}
+
+.form-valid {
+  color: green;
+  display: none;
+}
+
 .formrow,
 input,
 textarea {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0em;
+  margin-bottom: 15px;
 }
 
 .input_box--1,
 .input_box--2 {
-  max-width: 60%;
+  max-width: 66%;
 }
 
 .input_box {
@@ -283,6 +295,7 @@ textarea {
 .send_button {
   padding: 12px 33px 14px;
   background-color: lightgray;
+  border-radius: 10px;
   border: none;
   outline: none;
   color: black;

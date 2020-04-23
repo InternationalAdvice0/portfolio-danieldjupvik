@@ -1,3 +1,4 @@
+/*----- Hamburger menu -----*/
 function changeClassAndAnimateButton(x) {
   x.classList.toggle("change");
   var x = document.getElementById("topnav-container");
