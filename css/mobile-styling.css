@@ -1,18 +1,31 @@
 /* Essentials */
-body {
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;669;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+* {
   margin: 0;
   padding: 0;
-  background-color: black;
 }
-/* Essensial - END */
 
-/* Globale navbar */
+body {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+/* Essentials - END */
+
+/* Global navbar */
 .logo-text {
   font-size: 20pt;
-  margin-left: 1.5em;
+  margin-left: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   font-weight: bolder;
-  color: lightgray;
+  color: white;
   display: inline-block;
+  font-family: "Orbitron", sans-serif;
+}
+
+.active {
+  font-weight: bold;
 }
 
 .topnav {
@@ -24,15 +37,15 @@ body {
   background-color: rgb(51, 51, 51);
 }
 
-.topnav #myLinks {
+.topnav #topnav-container {
   display: none;
 }
 
 .topnav-links {
   color: white;
-  padding: 15px 35px;
+  padding: 15px 30px;
   text-decoration: none;
-  font-size: 26px;
+  font-size: 24px;
   display: block;
 }
 
@@ -42,7 +55,7 @@ body {
   cursor: pointer;
   position: absolute;
   right: 25px;
-  top: 22px;
+  top: 24px;
 }
 
 .bar1,
@@ -50,7 +63,7 @@ body {
 .bar3 {
   width: 35px;
   height: 5px;
-  background-color: lightgray;
+  background-color: white;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -69,23 +82,223 @@ body {
   transform: rotate(45deg) translate(-8px, -8px);
 }
 /* Hamburger menu icon - END */
-/* Globale navbar - END */
+/* Global navbar - END */
+
+/* Global Footer */
+.footer {
+  height: 100%;
+  background-color: rgb(51, 51, 51);
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+}
+
+.footer-heading {
+  margin-top: 0em;
+  padding-top: 1em;
+  color: white;
+}
+
+.container-icon {
+  padding-bottom: 1em;
+}
+
+.container-icon a {
+  text-decoration: none;
+}
+.footer-contact-icon {
+  width: 35px;
+  margin-right: 12px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+/* Global Footer - END */
 
 /* Index */
 .main-background {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../assets/shahadat-rahman-BfrQnKBulYQ-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../assets/images/background-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
   height: 100%;
 }
 
 main {
-  height: 1000px;
+  height: 100%;
   width: 100%;
 }
 
+.temp {
+  height: 400px;
+}
+.heading {
+  padding-top: 4.5em;
+  margin-bottom: 2em;
+  padding-bottom: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: fit-content;
+}
+
+.sub-heading {
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 15px;
+  border-bottom: white dashed 2px;
+  width: fit-content;
+}
+
+.container-heading {
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+}
+
+.work-section {
+  margin-top: 1.5em;
+  padding-bottom: 4em;
+  text-align: center;
+  overflow: hidden;
+}
+
+.work-box {
+  border: 2px solid lightgray;
+  margin-top: 3em;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Index - END */
+
+/* CV */
+.heading-cv {
+  font-size: 20pt;
+}
+
+.container-heading-cv {
+  padding-top: 1.5em;
+}
+
+.container-cv {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2em;
+  padding-bottom: 5em;
+}
+
+.container-cv p {
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  border-bottom: white solid 1.5px;
+  width: fit-content;
+}
+
+/* CV - END */
+
+/* About */
+.paragraph-about {
+  font-size: 14pt;
+  line-height: 28px;
+}
+.container-about {
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 3em;
+  width: 80%;
+}
+
+.maps {
+  width: 100%;
+}
+
+.maps-container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+/* About - END */
+
+/* Contact */
+/* Style for contact - form */
+.contact_header {
+  width: fit-content;
+  margin-bottom: 2em;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid white;
+}
+
+.contact_form {
+  margin-top: 1em;
+  border: none;
+}
+
+.contact_field {
+  width: 98%;
+  padding: 0em;
+  padding-bottom: 1em;
+  padding-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formlabel {
+  display: block;
+  font-weight: normal;
+  font-size: 13pt;
+  color: white;
+}
+
+.formrow,
+input,
+textarea {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.input_box--1,
+.input_box--2 {
+  max-width: 60%;
+}
+
+.input_box {
+  font-size: 12pt;
+  font-family: inherit;
+}
+
+input,
+textarea {
+  padding: 0.5em;
+}
+
+.formrow_send {
+  text-align: center;
+}
+
+.send_button {
+  padding: 12px 33px 14px;
+  background-color: lightgray;
+  border: none;
+  outline: none;
+  color: black;
+  cursor: pointer;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  opacity: 1;
+  line-height: 1;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.send_button:hover {
+  opacity: 0.9;
+}
+/* Style for contact - form END */
+/* Contact - END */

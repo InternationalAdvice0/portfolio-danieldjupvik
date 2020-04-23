@@ -1,6 +1,6 @@
-function myFunction(x) {
+function changeClassAndAnimateButton(x) {
   x.classList.toggle("change");
-  var x = document.getElementById("myLinks");
+  var x = document.getElementById("topnav-container");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {

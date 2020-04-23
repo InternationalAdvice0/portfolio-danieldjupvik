@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/mobile-styling.css" />
+    <link rel="stylesheet" href="./css/desktop-styling.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <nav>
+      <div class="topnav">
+        <a href="./index.html"><p class="logo-text">DDS</p></a>
+        <div id="topnav-container">
+          <a class="topnav-links" href="./index.html">Home</a>
+          <a class="topnav-links" href="./cv.html">CV</a>
+          <a class="topnav-links" href="./about.html">About</a>
+          <a class="topnav-links active" href="./contact.html">Contact</a>
+        </div>
+        <div class="container" onclick="changeClassAndAnimateButton(this)">
+          <a href="javascript:void(0);">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="main-background">
+        <div class="container-heading">
+          <h1 class="heading sub-heading">Contact me</h1>
+        </div>
+        <form class="contact_form">
+          <div class="contact_field">
+            <div class="formrow formrow--row1">
+              <h2 class="contact_header">Send me a message:</h2>
+              <input
+                id="firstName"
+                class="input_box input_box--1"
+                type="text"
+                name="firstName"
+                placeholder="First name"
+              />
+              <label for="email" class="formlabel form-error"
+                >Please enter your first name</label
+              >
+            </div>
+            <div class="formrow formrow--row2">
+              <input
+                id="lastName"
+                class="input_box input_box--2"
+                type="text"
+                name="lastName"
+                placeholder="Last name"
+              />
+              <label for="email" class="formlabel form-error"
+                >Please enter your last name</label
+              >
+            </div>
+            <div class="formrow formrow--row3">
+              <input
+                id="email"
+                class="input_box input_box--3"
+                type="text"
+                name="email"
+                placeholder="Email"
+              />
+              <label for="email" class="formlabel form-error"
+                >Please enter your email address</label
+              >
+              <label for="email" class="formlabel form-error"
+                >Please enter a valid email address</label
+              >
+            </div>
+            <div class="formrow formrow--row4">
+              <textarea
+                id="message"
+                class="input_box input_box--4"
+                name="message"
+                placeholder="Message (at least 10 characters)"
+                style="height: 150px;"
+              ></textarea>
+              <label for="message" class="formlabel form-error"
+                >The message must be at least 10 characters.</label
+              >
+            </div>
+            <div class="formrow formrow_send">
+              <button class="send_button" type="submit">Send</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <h2 class="footer-heading">Contact</h2>
+        <div class="container-icon">
+          <a href="https://www.facebook.com/DanielSaetre">
+            <img
+              class="footer-contact-icon"
+              src="./assets/icons/facebook-icon.png"
+              alt="facebook icon"
+            />
+          </a>
+          <a href="https://twitter.com/fredag144">
+            <img
+              class="footer-contact-icon"
+              src="./assets/icons/twitter-icon.png"
+              alt="twitter icon"
+            />
+          </a>
+          <a href="https://www.instagram.com/daniel.djupvik/">
+            <img
+              class="footer-contact-icon"
+              src="./assets/icons/instagram-icon.png"
+              alt="instagram icon"
+            />
+          </a>
+          <h3>&copy; djupvik.co 2020</h3>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
