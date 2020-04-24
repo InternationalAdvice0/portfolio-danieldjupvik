@@ -64,7 +64,7 @@ formElem.addEventListener("submit", function (event) {
 
 // Functions to check validation
 function validateLength(value) {
-  if (value.length < 10) {
+  if (value.length < 5) {
     return true;
   } else {
     return false;
@@ -83,6 +83,8 @@ function validateNotEmpty(value) {
 
 function validateEmail(email) {
   let regEx = /\S+@\S+\.\S+/;
-  let checkMail = regEx.test(email);
-  return checkMail;
+  if (validateNotEmpty(email)) {
+    let checkMail = regEx.test(email);
+    return checkMail;
+  }
 }

@@ -1,0 +1,51 @@
+@media screen and (min-width: 630px) {
+  /* Global navbar */
+  .icon-container {
+    display: none;
+  }
+  .topnav #topnav-container {
+    display: block;
+    margin-top: 12px;
+    margin-right: 50px;
+    float: right;
+  }
+  .topnav-links {
+    display: inline-block;
+    color: white;
+    padding: 9px 3px;
+    margin-left: 25px;
+    text-decoration: none;
+    font-size: 24px;
+  }
+
+  .topnav-links:hover {
+    border-bottom: dashed white 3px;
+  }
+
+  .active {
+    border-bottom: dashed white 3px;
+  }
+  /* Global navbar - END */
+
+  /* Index */
+  .work-box {
+    width: 35%;
+    margin-right: 30px;
+  }
+  /* Index - END */
+
+  /* CV */
+  .container-cv {
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3em;
+    text-align: center;
+  }
+
+  .container-cv p {
+    text-align: left;
+    width: 90%;
+  }
+  /* CV - END */
+}

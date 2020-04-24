@@ -50,7 +50,7 @@ body {
 }
 
 /* Hamburger menu icon */
-.container {
+.icon-container {
   display: block;
   cursor: pointer;
   position: absolute;
@@ -189,7 +189,7 @@ main {
 }
 
 .container-cv p {
-  margin-bottom: 40px;
+  margin-bottom: 45px;
   padding-bottom: 10px;
   border-bottom: white solid 1.5px;
   width: fit-content;
@@ -261,6 +261,7 @@ main {
 .form-valid {
   color: green;
   display: none;
+  margin-bottom: 15px;
 }
 
 .formrow,
