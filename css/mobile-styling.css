@@ -123,14 +123,15 @@ body {
   height: 100%;
 }
 
+.middle {
+  display: none;
+}
+
 main {
   height: 100%;
   width: 100%;
 }
 
-.temp {
-  height: 400px;
-}
 .heading {
   padding-top: 4.5em;
   margin-bottom: 2em;
@@ -138,14 +139,12 @@ main {
   margin-right: auto;
   margin-left: auto;
   width: fit-content;
-  letter-spacing: 3px;
 }
 
 .sub-heading {
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 15px;
-  border-bottom: white dashed 2px;
   width: fit-content;
 }
 
@@ -155,16 +154,33 @@ main {
 }
 
 .work-section {
+  background-color: rgb(24, 26, 27);
   margin-top: 1.5em;
-  padding-bottom: 4em;
+  padding-bottom: 8em;
   text-align: center;
   overflow: hidden;
 }
 
+.work-image {
+  border: 1px solid lightgray;
+  margin-top: 1.7em;
+  width: 100%;
+  box-shadow: 0px 0px 30px 0px black;
+}
+
 .work-box {
-  border: 2px solid lightgray;
-  margin-top: 3em;
   width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+}
+
+.work-label {
+  border-bottom: solid 2px white;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: fit-content;
   margin-left: auto;
   margin-right: auto;
 }
@@ -172,14 +188,6 @@ main {
 /* Index - END */
 
 /* CV */
-.heading-cv {
-  font-size: 20pt;
-}
-
-.container-heading-cv {
-  padding-top: 1.5em;
-}
-
 .container-cv {
   width: 85%;
   margin-left: auto;
@@ -207,7 +215,7 @@ main {
   margin-left: auto;
   padding-bottom: 3em;
   width: 80%;
-  border-bottom: dashed 2px white;
+  display: block;
 }
 
 .maps {
@@ -219,7 +227,22 @@ main {
   margin-left: auto;
   margin-right: auto;
   padding-top: 3em;
-  padding-bottom: 3em;
+  padding-bottom: 5em;
+}
+
+.profile-picture {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: 50%;
+  margin-top: 2em;
+  float: none;
+  display: block;
+  border: 2px solid white;
+}
+
+.container-profile-picture {
 }
 /* About - END */
 
@@ -227,6 +250,8 @@ main {
 /* Style for contact - form */
 .contact_header {
   width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 2em;
   padding-bottom: 0.5em;
   border-bottom: 2px solid white;
@@ -239,7 +264,7 @@ main {
 }
 
 .contact_field {
-  width: 98%;
+  width: 90%;
   padding: 0em;
   padding-top: 0;
   margin-left: auto;
@@ -254,12 +279,12 @@ main {
 }
 
 .form-error {
-  color: red;
+  color: white;
   display: none;
 }
 
 .form-valid {
-  color: green;
+  color: white;
   display: none;
   margin-bottom: 15px;
 }
@@ -267,16 +292,15 @@ main {
 .formrow,
 input,
 textarea {
-  width: 90%;
+  width: 94%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0em;
   margin-bottom: 15px;
 }
-
-.input_box--1,
-.input_box--2 {
-  max-width: 66%;
+.input_box {
+  background-color: lightgrey;
+  border-color: lightgrey;
 }
 
 .input_box {
@@ -295,11 +319,11 @@ textarea {
 
 .send_button {
   padding: 12px 33px 14px;
-  background-color: lightgray;
+  background-color: rgb(24, 26, 27);
+  border: 1px solid white;
   border-radius: 10px;
-  border: none;
   outline: none;
-  color: black;
+  color: white;
   cursor: pointer;
   font-style: normal;
   font-size: 20px;
