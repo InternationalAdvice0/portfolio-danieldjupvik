@@ -1,5 +1,8 @@
 @media screen and (min-width: 630px) {
   /* Global navbar */
+  .logo-text {
+    margin-left: 1em;
+  }
   .icon-container {
     display: none;
   }
@@ -12,10 +15,10 @@
   .topnav-links {
     display: inline-block;
     color: white;
-    padding: 9px 3px;
+    padding: 12px 6px;
     margin-left: 25px;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .topnav-links:hover {
@@ -32,13 +35,46 @@
   }
   /* Global navbar - END */
 
+  /* Footer */
+  .footer {
+    text-align: left;
+  }
+
+  .container-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 2em;
+    margin-bottom: 10px;
+  }
+
+  .footer-heading {
+    text-align: center;
+  }
+
+  .footer-text {
+    font-size: 16pt;
+    float: right;
+    margin-top: 3em;
+    margin-right: 2em;
+  }
+
+  .footer-contact-icon {
+    width: 50px;
+  }
+
+  .footer-contact-icon:hover {
+    opacity: 0.8;
+  }
+
+  /* Footer - END */
+
   /* Index */
   .work-image {
     width: 100%;
     display: block;
     transition: 0.6s ease;
     backface-visibility: hidden;
-    opacity: 1;
+    opacity: 0.8;
   }
 
   .middle {
@@ -54,7 +90,7 @@
   }
 
   .container-layer:hover .work-image {
-    opacity: 0.2;
+    opacity: 0.1;
   }
 
   .container-layer:hover .middle {
@@ -62,13 +98,13 @@
   }
 
   .container-layer:hover .work-image {
-    transform: scale(1.06);
+    transform: scale(1.07);
   }
 
   .text {
-    background-color: white;
-    border: 2px solid rgb(24, 26, 27);
-    color: black;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
     font-size: 16px;
     font-weight: bold;
     padding: 16px 32px;
@@ -79,10 +115,16 @@
     width: 30%;
     display: inline-block;
     margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  .work-label {
+    font-size: 15pt;
   }
 
   .heading {
     font-size: 35pt;
+    letter-spacing: 4px;
   }
 
   .sub-heading {
@@ -134,12 +176,12 @@
   }
 
   .maps-container {
-    width: 65%;
+    width: 40%;
   }
   /* About - END */
 
   /* Contact */
-  .contact_field {
+  .contact-field {
     width: 40%;
   }
   /* Contact - END */

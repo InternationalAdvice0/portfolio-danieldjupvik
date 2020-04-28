@@ -2,10 +2,19 @@
 function changeClassAndAnimateButton(x) {
   x.classList.toggle("change");
   var x = document.getElementById("topnav-container");
+  var topnav = document.querySelector(".topnav");
+  var footer = document.querySelector(".footer");
+  var backgroundElem = document.querySelector(".main-background");
   if (x.style.display === "block") {
     x.style.display = "none";
+    topnav.classList.remove("backgroundColorTopnav");
+    backgroundElem.classList.remove("addBlur");
+    footer.classList.remove("addBlur");
   } else {
     x.style.display = "block";
+    topnav.classList.add("backgroundColorTopnav");
+    backgroundElem.classList.add("addBlur");
+    footer.classList.add("addBlur");
   }
 }
 

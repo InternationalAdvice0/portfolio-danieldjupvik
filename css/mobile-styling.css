@@ -9,12 +9,24 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: white;
+  background-color: rgb(51, 51, 51);
 }
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 /* Essentials - END */
 
 /* Global navbar */
 .logo-text {
-  font-size: 20pt;
+  font-size: 22pt;
   margin-left: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -30,15 +42,22 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
   position: absolute;
   width: 100%;
   z-index: 999;
-  background-color: rgb(51, 51, 51);
+  #box-shadow: 0px 0px 40px 5px black;
+  #background-color: rgb(51, 51, 51);
+}
+
+.backgroundColorTopnav {
+  #background-color: rgb(51, 51, 51);
+  background-color: black;
+  box-shadow: 0px 0px 45px 25px black;
 }
 
 .topnav #topnav-container {
   display: none;
+  padding-bottom: 2em;
 }
 
 .topnav-links {
@@ -47,6 +66,11 @@ body {
   text-decoration: none;
   font-size: 24px;
   display: block;
+  text-align: center;
+}
+
+.addBlur {
+  filter: blur(6px);
 }
 
 /* Hamburger menu icon */
@@ -86,6 +110,7 @@ body {
 
 /* Global Footer */
 .footer {
+  box-shadow: 0px 0px 40px 5px black;
   height: 100%;
   background-color: rgb(51, 51, 51);
   text-align: center;
@@ -99,7 +124,7 @@ body {
 }
 
 .container-icon {
-  padding-bottom: 1em;
+  padding-bottom: 0em;
 }
 
 .container-icon a {
@@ -107,15 +132,20 @@ body {
 }
 .footer-contact-icon {
   width: 35px;
-  margin-right: 12px;
+  margin-right: 6px;
+  margin-left: 6px;
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+.footer-text {
+  padding-bottom: 1em;
 }
 /* Global Footer - END */
 
 /* Index */
 .main-background {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../assets/images/background-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -145,6 +175,7 @@ main {
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 15px;
+  padding-top: 2em;
   width: fit-content;
 }
 
@@ -159,13 +190,20 @@ main {
   padding-bottom: 8em;
   text-align: center;
   overflow: hidden;
+  box-shadow: 0px 0px 25px 5px black;
+}
+
+.empty-div {
+  padding: 8em;
 }
 
 .work-image {
   border: 1px solid lightgray;
   margin-top: 1.7em;
   width: 100%;
-  box-shadow: 0px 0px 30px 0px black;
+  box-shadow: 0px 0px 40px 0px black;
+  border-radius: 10px;
+  opacity: 0.9;
 }
 
 .work-box {
@@ -176,8 +214,7 @@ main {
 }
 
 .work-label {
-  border-bottom: solid 2px white;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
   padding-left: 10px;
   padding-right: 10px;
   width: fit-content;
@@ -192,8 +229,13 @@ main {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 2em;
-  padding-bottom: 5em;
+  padding-top: 4em;
+  padding-bottom: 1em;
+}
+
+.backgroundLayer-cv {
+  background-color: rgb(24, 26, 27);
+  box-shadow: 0px 0px 25px 5px black;
 }
 
 .container-cv p {
@@ -213,13 +255,21 @@ main {
 .container-about {
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 3em;
+  padding-top: 6em;
+  padding-bottom: 2em;
   width: 80%;
   display: block;
 }
 
+.backgroundLayer-about {
+  background-color: rgb(24, 26, 27);
+  box-shadow: 0px 0px 25px 5px black;
+  display: inline-block;
+}
+
 .maps {
   width: 100%;
+  box-shadow: 0px 0px 25px 5px black;
 }
 
 .maps-container {
@@ -236,34 +286,37 @@ main {
   margin-right: auto;
   text-align: center;
   border-radius: 50%;
-  margin-top: 2em;
-  float: none;
+  margin-top: 0em;
   display: block;
   border: 2px solid white;
+  box-shadow: 0px 0px 30px 2px black;
 }
 
-.container-profile-picture {
-}
 /* About - END */
 
 /* Contact */
 /* Style for contact - form */
-.contact_header {
+.contact-header {
   width: fit-content;
-  margin-left: auto;
   margin-right: auto;
+  padding-top: 2em;
   margin-bottom: 2em;
   padding-bottom: 0.5em;
   border-bottom: 2px solid white;
 }
 
-.contact_form {
+.contact-form {
   margin-top: 1em;
   padding-bottom: 1em;
   border: none;
 }
 
-.contact_field {
+.backgroundLayer-contact {
+  background-color: rgb(24, 26, 27);
+  box-shadow: 0px 0px 25px 5px black;
+}
+
+.contact-field {
   width: 90%;
   padding: 0em;
   padding-top: 0;
@@ -292,18 +345,15 @@ main {
 .formrow,
 input,
 textarea {
-  width: 94%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0em;
   margin-bottom: 15px;
 }
 .input_box {
-  background-color: lightgrey;
-  border-color: lightgrey;
-}
-
-.input_box {
+  background-color: white;
+  border: none;
   font-size: 12pt;
   font-family: inherit;
 }
@@ -319,11 +369,11 @@ textarea {
 
 .send_button {
   padding: 12px 33px 14px;
-  background-color: rgb(24, 26, 27);
-  border: 1px solid white;
+  background-color: white;
+  border: 2px solid black;
   border-radius: 10px;
   outline: none;
-  color: white;
+  color: black;
   cursor: pointer;
   font-style: normal;
   font-size: 20px;
@@ -336,7 +386,7 @@ textarea {
 }
 
 .send_button:hover {
-  opacity: 0.9;
+  opacity: 0.7;
 }
 /* Style for contact - form END */
 /* Contact - END */

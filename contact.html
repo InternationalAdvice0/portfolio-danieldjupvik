@@ -32,68 +32,71 @@
         <div class="container-heading">
           <h1 class="heading">Contact me</h1>
         </div>
-        <h2 class="contact_header">Send me a message</h2>
-        <form class="contact_form" id="contactForm">
-          <div class="contact_field">
-            <div class="formrow formrow--row1">
-              <div class="form-valid">The form passed validation</div>
-              <input
-                id="firstName"
-                class="input_box input_box--1"
-                type="text"
-                name="firstName"
-                placeholder="First name"
-              />
-              <div class="form-error">Please enter your first name</div>
-            </div>
-            <div class="formrow formrow--row2">
-              <input
-                id="lastName"
-                class="input_box input_box--2"
-                type="text"
-                name="lastName"
-                placeholder="Last name"
-              />
-              <div class="form-error">Please enter your last name</div>
-            </div>
-            <div class="formrow formrow--row3">
-              <input
-                id="email"
-                class="input_box input_box--3"
-                type="text"
-                name="email"
-                placeholder="Email"
-              />
-              <div class="form-error form-error-invalid">
-                Please enter a valid email address
+        <div class="backgroundLayer-contact">
+          <form class="contact-form" id="contactForm">
+            <div class="contact-field">
+              <h2 class="contact-header">Send me a message</h2>
+              <div class="formrow formrow--row1">
+                <div class="form-valid">The form passed validation</div>
+                <input
+                  id="firstName"
+                  class="input_box input_box--1"
+                  type="text"
+                  name="firstName"
+                  placeholder="First name"
+                />
+                <div class="form-error">Please enter your first name</div>
               </div>
-              <div class="form-error form-error-empty">
-                Please enter your email address
+              <div class="formrow formrow--row2">
+                <input
+                  id="lastName"
+                  class="input_box input_box--2"
+                  type="text"
+                  name="lastName"
+                  placeholder="Last name"
+                />
+                <div class="form-error">Please enter your last name</div>
+              </div>
+              <div class="formrow formrow--row3">
+                <input
+                  id="email"
+                  class="input_box input_box--3"
+                  type="text"
+                  name="email"
+                  placeholder="Email"
+                />
+                <div class="form-error form-error-invalid">
+                  Please enter a valid email address
+                </div>
+                <div class="form-error form-error-empty">
+                  Please enter your email address
+                </div>
+              </div>
+              <div class="formrow formrow--row4">
+                <textarea
+                  id="message"
+                  class="input_box input_box--4"
+                  name="message"
+                  placeholder="Message (at least 5 characters)"
+                  style="height: 150px;"
+                ></textarea>
+                <div class="form-error">
+                  The message must be at least 5 characters.
+                </div>
+              </div>
+              <div class="formrow formrow_send">
+                <button class="send_button" type="submit">Send</button>
               </div>
             </div>
-            <div class="formrow formrow--row4">
-              <textarea
-                id="message"
-                class="input_box input_box--4"
-                name="message"
-                placeholder="Message (at least 5 characters)"
-                style="height: 150px;"
-              ></textarea>
-              <div class="form-error">
-                The message must be at least 5 characters.
-              </div>
-            </div>
-            <div class="formrow formrow_send">
-              <button class="send_button" type="submit">Send</button>
-            </div>
-          </div>
-        </form>
+          </form>
+        </div>
+        <div class="empty-div"></div>
       </div>
     </main>
     <footer>
       <div class="footer">
-        <h2 class="footer-heading">Contact</h2>
         <div class="container-icon">
+          <h2 class="footer-heading">Contact</h2>
           <a href="https://www.facebook.com/DanielSaetre">
             <img
               class="footer-contact-icon"
@@ -115,6 +118,8 @@
               alt="instagram icon"
             />
           </a>
+        </div>
+        <div class="footer-text">
           <h3>&copy; djupvik.co 2020</h3>
         </div>
       </div>
