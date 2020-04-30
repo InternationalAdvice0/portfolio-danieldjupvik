@@ -8,8 +8,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: white;
-  background-color: rgb(51, 51, 51);
+  color: #1d2129;
 }
 
 /* apply a natural box layout model to all elements, but allowing components to change */
@@ -20,6 +19,10 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+.backgroundLayerColor {
+  background-color: #e9ebee;
 }
 
 /* Essentials - END */
@@ -45,19 +48,16 @@ html {
   position: absolute;
   width: 100%;
   z-index: 999;
-  #box-shadow: 0px 0px 40px 5px black;
-  #background-color: rgb(51, 51, 51);
-}
-
-.backgroundColorTopnav {
-  #background-color: rgb(51, 51, 51);
-  background-color: black;
-  box-shadow: 0px 0px 45px 25px black;
 }
 
 .topnav #topnav-container {
   display: none;
   padding-bottom: 2em;
+}
+
+.backgroundColorTopnav {
+  background-color: rgba(18, 15, 16);
+  box-shadow: 0px 0px 25px 5px black;
 }
 
 .topnav-links {
@@ -71,6 +71,7 @@ html {
 
 .addBlur {
   filter: blur(6px);
+  transition: 0.4s ease-in;
 }
 
 /* Hamburger menu icon */
@@ -110,11 +111,10 @@ html {
 
 /* Global Footer */
 .footer {
-  box-shadow: 0px 0px 40px 5px black;
   height: 100%;
-  background-color: rgb(51, 51, 51);
+  background-color: #e9ebee;
   text-align: center;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .footer-heading {
@@ -124,14 +124,14 @@ html {
 }
 
 .container-icon {
-  padding-bottom: 0em;
+  padding-top: 1em;
 }
 
 .container-icon a {
   text-decoration: none;
 }
 .footer-contact-icon {
-  width: 35px;
+  width: 40px;
   margin-right: 6px;
   margin-left: 6px;
   margin-top: 1em;
@@ -140,6 +140,8 @@ html {
 
 .footer-text {
   padding-bottom: 1em;
+  font-size: 17pt;
+  font-weight: 600;
 }
 /* Global Footer - END */
 
@@ -153,22 +155,19 @@ html {
   height: 100%;
 }
 
-.middle {
+.overlay {
   display: none;
 }
 
-main {
-  height: 100%;
-  width: 100%;
-}
-
 .heading {
-  padding-top: 4.5em;
+  padding-top: 5.5em;
   margin-bottom: 2em;
   padding-bottom: 15px;
   margin-right: auto;
   margin-left: auto;
   width: fit-content;
+  color: white;
+  letter-spacing: 4px;
 }
 
 .sub-heading {
@@ -185,12 +184,10 @@ main {
 }
 
 .work-section {
-  background-color: rgb(24, 26, 27);
-  margin-top: 1.5em;
+  padding-top: 2.5em;
   padding-bottom: 8em;
   text-align: center;
   overflow: hidden;
-  box-shadow: 0px 0px 25px 5px black;
 }
 
 .empty-div {
@@ -198,19 +195,22 @@ main {
 }
 
 .work-image {
-  border: 1px solid lightgray;
-  margin-top: 1.7em;
+  margin-top: 1em;
   width: 100%;
-  box-shadow: 0px 0px 40px 0px black;
-  border-radius: 10px;
-  opacity: 0.9;
+  border: 1px solid #1d2129;
 }
 
 .work-box {
-  width: 85%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 3em;
+  background-color: #f5f6f7;
+  #border: 1px solid #1d2129;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 25px;
+  padding-top: 1em;
 }
 
 .work-label {
@@ -220,6 +220,9 @@ main {
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
+  font-weight: 600;
+  font-size: 16pt;
+  letter-spacing: 1px;
 }
 
 /* Index - END */
@@ -233,15 +236,10 @@ main {
   padding-bottom: 1em;
 }
 
-.backgroundLayer-cv {
-  background-color: rgb(24, 26, 27);
-  box-shadow: 0px 0px 25px 5px black;
-}
-
 .container-cv p {
   margin-bottom: 45px;
   padding-bottom: 10px;
-  border-bottom: white solid 1.5px;
+  border-bottom: black solid 1.5px;
   width: fit-content;
 }
 
@@ -262,22 +260,7 @@ main {
 }
 
 .backgroundLayer-about {
-  background-color: rgb(24, 26, 27);
-  box-shadow: 0px 0px 25px 5px black;
   display: inline-block;
-}
-
-.maps {
-  width: 100%;
-  box-shadow: 0px 0px 25px 5px black;
-}
-
-.maps-container {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 3em;
-  padding-bottom: 5em;
 }
 
 .profile-picture {
@@ -289,7 +272,12 @@ main {
   margin-top: 0em;
   display: block;
   border: 2px solid white;
-  box-shadow: 0px 0px 30px 2px black;
+  box-shadow: 0px 0px 20px 3px darkgray;
+}
+
+.container-profile-picture {
+  margin-top: 4em;
+  margin-bottom: 2em;
 }
 
 /* About - END */
@@ -302,18 +290,14 @@ main {
   padding-top: 2em;
   margin-bottom: 2em;
   padding-bottom: 0.5em;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid black;
+  font-family: inherit;
 }
 
 .contact-form {
   margin-top: 1em;
   padding-bottom: 1em;
   border: none;
-}
-
-.backgroundLayer-contact {
-  background-color: rgb(24, 26, 27);
-  box-shadow: 0px 0px 25px 5px black;
 }
 
 .contact-field {
@@ -332,12 +316,12 @@ main {
 }
 
 .form-error {
-  color: white;
+  color: red;
   display: none;
 }
 
 .form-valid {
-  color: white;
+  color: green;
   display: none;
   margin-bottom: 15px;
 }
@@ -353,7 +337,8 @@ textarea {
 }
 .input_box {
   background-color: white;
-  border: none;
+  border-color: black;
+  border-width: 1px;
   font-size: 12pt;
   font-family: inherit;
 }
@@ -373,7 +358,7 @@ textarea {
   border: 2px solid black;
   border-radius: 10px;
   outline: none;
-  color: black;
+  color: #1d2129;
   cursor: pointer;
   font-style: normal;
   font-size: 20px;
