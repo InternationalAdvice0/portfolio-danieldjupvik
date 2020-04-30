@@ -206,11 +206,11 @@ html {
   margin-right: auto;
   margin-top: 3em;
   background-color: #f5f6f7;
-  #border: 1px solid #1d2129;
   padding-left: 18px;
   padding-right: 18px;
   padding-bottom: 25px;
   padding-top: 1em;
+  border-radius: 10px;
 }
 
 .work-label {
