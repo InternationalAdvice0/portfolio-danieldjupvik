@@ -56,7 +56,7 @@ html {
 }
 
 .backgroundColorTopnav {
-  background-color: rgba(23, 23, 23);
+  background-color: rgb(2, 0, 2);
   box-shadow: 0px 0px 25px 5px black;
 }
 
@@ -71,7 +71,7 @@ html {
 
 .addBlur {
   filter: blur(6px);
-  transition: 0.4s ease-in;
+  transition: 0.2s ease-in;
 }
 
 /* Hamburger menu icon */
@@ -147,7 +147,8 @@ html {
 
 /* Index */
 .main-background {
-  background-color: rgba(23, 23, 23);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assets/images/background-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -167,14 +168,6 @@ html {
   width: fit-content;
   color: white;
   letter-spacing: 4px;
-}
-
-.sub-heading {
-  margin-right: auto;
-  margin-left: auto;
-  padding-bottom: 15px;
-  padding-top: 2em;
-  width: fit-content;
 }
 
 .container-heading {
@@ -230,8 +223,8 @@ html {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 2em;
+  padding-bottom: 2em;
   padding-left: 2em;
   padding-right: 2em;
   background-color: #f5f6f7;
@@ -247,24 +240,35 @@ html {
   border-radius: 10px;
 }
 
+.backgroundLayer-cv {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
 /* CV - END */
 
 /* About */
 .paragraph-about {
   font-size: 14pt;
   line-height: 28px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .container-about {
   margin-right: auto;
   margin-left: auto;
-  padding-top: 6em;
-  padding-bottom: 2em;
-  width: 80%;
+  margin-top: 5em;
+  padding-bottom: 1em;
+  padding-top: 2em;
+  width: 100%;
   display: block;
+  background-color: #f5f6f7;
 }
 
 .backgroundLayer-about {
   display: inline-block;
+  padding-bottom: 5em;
 }
 
 .profile-picture {
