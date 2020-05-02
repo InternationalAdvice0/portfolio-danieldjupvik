@@ -230,18 +230,21 @@ html {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 4em;
-  padding-bottom: 1em;
+  padding-top: 3em;
+  padding-bottom: 3em;
   padding-left: 2em;
   padding-right: 2em;
   background-color: #f5f6f7;
 }
 
 .container-cv p {
-  margin-bottom: 45px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   padding-bottom: 10px;
-  border-bottom: black solid 1.5px;
-  width: fit-content;
+  width: 100%;
+  background-color: white;
+  padding: 1em;
+  border-radius: 10px;
 }
 
 /* CV - END */
